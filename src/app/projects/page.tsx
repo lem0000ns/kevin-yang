@@ -1,9 +1,7 @@
 import React from "react";
+import Yba from "./yba";
 import Navbar from "@/components/ui/Navbar";
 import { Roboto_Mono } from "next/font/google";
-import Sra from "./sra";
-import IvyMax from "./ivymax";
-import SVBC from "./svbc";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -19,11 +17,9 @@ const page = () => {
         <Navbar />
       </header>
       <div className="text-center text-4xl">
-        <strong>Experience</strong>
+        <strong>Projects</strong>
       </div>
-      <Sra />
-      <IvyMax />
-      <SVBC />
+      <Yba />
     </div>
   );
 };

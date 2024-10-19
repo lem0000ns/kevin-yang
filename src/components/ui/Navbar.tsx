@@ -7,10 +7,10 @@ import Link from "next/link";
 const Navlinks = () => {
   return (
     <>
-      <Link href="/">Home</Link>
-      <Link href="/skills">Skills</Link>
+      <Link href="/">About</Link>
+      <Link href="/projects">Projects</Link>
       <Link href="/experience">Experience</Link>
-      <Link href="/fun">I'm Bored</Link>
+      <Link href="/fun">Play</Link>
     </>
   );
 };
