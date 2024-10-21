@@ -26,8 +26,8 @@ const skills = () => {
           JSON, MySQL, PostgreSQL, Git, Shell-Scripting, Web-Scraping
         </li>
         <li>
-          <strong>Full-Stack Tools: </strong>Backend, Frontend, React.js,
-          Next.js
+          <strong className="text-violet-400">Full-Stack Tools: </strong>
+          Backend, Frontend, React.js, Next.js
         </li>
       </ul>
     </div>
