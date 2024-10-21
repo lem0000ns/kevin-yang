@@ -34,7 +34,6 @@ const LanguageLearning = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="text-xl hover:text-indigo-500 text-purple-400"
-          locale={false}
         >
           Korean
         </a>
