@@ -6,12 +6,12 @@ const skills = () => {
       <strong className="text-4xl hover:text-violet-800 transition-colors duration-100">
         skills
       </strong>
-      <p className="text-center w-2/3 mx-auto">
+      <p className="text-center lg:w-2/3 w-4/5 mx-auto">
         <strong className="text-violet-400">Relevant courses:</strong> Discrete
         Mathematics, Object-Oriented Programming, Assembly, Data Structures and
         Algorithms, Intro to Computational Science
       </p>
-      <ul className="text-center w-2/3 mx-auto">
+      <ul className="text-center lg:w-2/3 w-5/6 space-y-3 mx-auto">
         <li className="mt-8">
           <strong className="text-violet-400">Programming Languages: </strong>
           Python, Java, HTML/CSS, C++, Typescript, Tailwind
