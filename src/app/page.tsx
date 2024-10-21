@@ -22,7 +22,7 @@ export default function Home() {
       <div className="flex lg:flex-row flex-col items-center lg:w-3/4 lg:mx-auto mx-0 w-full">
         <AboutMe></AboutMe>
         <Image
-          className="rounded-full object-cover w-[400px] h-[500px] lg:p-4 p-1 mx-auto lg:mt-0 mt-8 outline outline-indigo-300 lg:ml-8"
+          className="rounded-full object-cover lg:w-1/3 w-2/3 lg:p-4 p-1 mx-auto lg:mt-0 mt-8 outline outline-indigo-300 lg:ml-8"
           src={profilePic}
           alt="Yours truly"
         />
