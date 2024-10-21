@@ -4,7 +4,20 @@
 
 body {
   font-family: 'Roboto Mono', sans-serif;
+  color:rgb(214, 200, 255);
+  background-color: rgb(2, 0, 3) !important;
+  transition-property: opacity, background, transform, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+}
+
 
 @layer utilities {
   .text-balance {

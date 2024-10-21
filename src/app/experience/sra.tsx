@@ -8,14 +8,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import SRA from "../sra.png";
+import SRA from "../resources/sra.png";
 
 const sra = () => {
   return (
     <div className="experience-section flex flex-col items-center justify-center space-y-16">
       <div className="experience-specific">
-        <Card className="w-3/5 mx-auto">
-          <div className="flex flex-row justify-between items-center">
+        <Card className="w-3/5 mx-auto bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
+          <div className="flex lg:flex-row lg:mt-0 mt-4 flex-col justify-between items-center">
             <div className="flex flex-col justify-center items-center mx-auto">
               <a
                 href="https://docs.google.com/presentation/d/16qhS_-NwkbVXvhDXhm5P0EsL2hvy9oF06Q6HCLw3N4Q/edit#slide=id.g13c39e20619_0_1"

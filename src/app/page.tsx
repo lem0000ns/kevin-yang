@@ -2,10 +2,11 @@
 import { Roboto_Mono } from "next/font/google";
 import React from "react";
 import Image from "next/image";
-import profilePic from "./pfp.png";
+import profilePic from "./resources/pfp.png";
 import Navbar from "@/components/ui/Navbar";
 import AboutMe from "@/components/aboutme";
 import Skills from "@/components/skills";
+import Footer from "@/components/footer";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -17,23 +18,17 @@ export default function Home() {
     <div
       className={`${robotoMono.className} homepage flex flex-col space-y-10 mb-16`}
     >
-      <header className="sticky bg-indigo-50 top-0 flex-wrap z-[20] mx-auto flex w-full items-center justify-between border-b border-black p-8">
-        <Navbar />
-      </header>
-      <div className="flex flex-row justify-evenly mx-auto w-full">
+      <Navbar />
+      <div className="flex lg:flex-row flex-col items-center lg:w-3/4 lg:mx-auto mx-0 w-full">
         <AboutMe></AboutMe>
         <Image
-          className="rounded-full object-cover w-[400px] h-[500px] p-4"
+          className="rounded-full object-cover w-[400px] h-[500px] p-4 mx-auto lg:mt-0 mt-8 outline outline-offset-2 outline-indigo-300 lg:ml-8"
           src={profilePic}
           alt="Yours truly"
         />
       </div>
       <Skills />
-      <hr className="border-t border-black my-8 w-2/3 mx-auto" />
-      <div className="text-center">
-        {" "}
-        Designed by <strong>Kevin Yang</strong>{" "}
-      </div>
+      <Footer />
     </div>
   );
 }

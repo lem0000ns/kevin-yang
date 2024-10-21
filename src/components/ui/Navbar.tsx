@@ -2,16 +2,20 @@
 import React from "react";
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
-import Link from "next/link";
+import TransitionLink from "./TransitionLink";
 
 const Navlinks = () => {
   return (
-    <>
-      <Link href="/">About</Link>
-      <Link href="/projects">Projects</Link>
-      <Link href="/experience">Experience</Link>
-      <Link href="/fun">Play</Link>
-    </>
+    <div className="md:w-full md:flex md:justify-between md:space-y-0 space-y-4">
+      <div>
+        <TransitionLink href="/">kevin yang</TransitionLink>
+      </div>
+      <div className="md:space-x-16 flex md:flex-row md:space-y-0 flex-col space-y-4">
+        <TransitionLink href="/projects">projects</TransitionLink>
+        <TransitionLink href="/experience">experience</TransitionLink>
+        <TransitionLink href="/notes">notes</TransitionLink>
+      </div>
+    </div>
   );
 };
 
@@ -23,9 +27,9 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <header className="top-0 bg-black flex-wrap z-[20] mx-auto flex w-5/6 items-center justify-between border-b border-purple p-8">
       <nav className="w-full">
-        <div className="hidden w-full md:flex justify-center space-x-32 ">
+        <div className="hidden w-full md:flex space-x-32 ">
           <Navlinks />
         </div>
         <div className="md:hidden">
@@ -39,7 +43,7 @@ const Navbar = () => {
           <Navlinks />
         </div>
       )}
-    </>
+    </header>
   );
 };
 
