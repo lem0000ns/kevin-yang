@@ -5,7 +5,7 @@ const aboutme = () => {
     <div className=" flex flex-col space-y-4 lg:w-3/5 mx-auto w-4/5">
       <p className="text-7xl">
         <strong className="w-full hover:text-violet-800 transition-colors duration-100">
-          about me
+          about me<span className="loading">...</span>
         </strong>
       </p>
       <p className="text-lg">
@@ -29,7 +29,7 @@ const aboutme = () => {
         self-studying Korean for 2 years and Spanish since high school.
       </p>
       <p className="text-lg">
-        Download my resume{" "}
+        Open my resume{" "}
         <a
           href="https://docs.google.com/document/d/16l3Z2ABT-0xikEwE-Ee_g07kd7EFKWBM/edit?usp=drive_link&ouid=108463634580760321563&rtpof=true&sd=true"
           target="_blank"
