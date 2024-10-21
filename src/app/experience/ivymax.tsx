@@ -24,7 +24,7 @@ const ivymax = () => {
                   students.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="hidden lg:block">
                 <CardDescription>
                   I used practice tests that consisted of a variety of
                   free-response and multiple-choice questions, along with polls

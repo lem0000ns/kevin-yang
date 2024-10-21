@@ -5,7 +5,7 @@ const footer = () => {
   return (
     <div>
       <hr className="border-t border-purple my-8 w-2/3 mx-auto" />
-      <div className="flex w-1/2 justify-between items-center mx-auto">
+      <div className="flex lg:w-1/2 w-3/4 justify-between items-center mx-auto">
         <div>
           Designed by <strong>Kevin Yang</strong>
         </div>

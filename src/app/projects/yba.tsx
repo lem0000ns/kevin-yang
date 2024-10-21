@@ -23,7 +23,7 @@ const yba = () => {
                   including player profiles and a ranking system.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="hidden lg:block">
                 <a
                   href="https://github.com/lem0000ns/yba_frontend"
                   target="_blank"

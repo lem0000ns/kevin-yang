@@ -49,7 +49,7 @@ const sra = () => {
                   packaging on consumer buying behavior.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="hidden lg:block">
                 <CardDescription>
                   A Python script was used to web-scrape more than 17,700
                   products. Characteristics such as product color vibrancy,

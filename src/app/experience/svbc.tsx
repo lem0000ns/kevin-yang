@@ -39,7 +39,7 @@ const svbc = () => {
                   group of 20 students.
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="hidden lg:block">
                 <CardDescription>
                   Responbilities included planning out the activities of each
                   week's clinic, the mentorship of other prospective coaches,
