@@ -13,7 +13,7 @@ const yba = () => {
   return (
     <div className="experience-section flex flex-col items-center justify-center space-y-16">
       <div className="experience-specific">
-        <Card className="w-3/5 mx-auto bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
+        <Card className="lg:w-3/5 w-4/5 mx-auto bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
           <div className="flex lg:flex-row flex-col justify-between items-center">
             <div className="flex-1 mr-4">
               <CardHeader>
