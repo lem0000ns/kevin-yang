@@ -64,15 +64,17 @@ const yba = () => {
               </CardContent>
             </div>
             <div className="flex flex-col justify-center items-center mx-auto">
-              <Image
-                className="pt-4 lg:pr-4"
-                src={Bball}
-                width={400}
-                height={300}
-                alt="bball"
-              />
+              <a href="//yangba.net" target="_blank" rel="noopener noreferrer">
+                <Image
+                  className="pt-4 lg:pr-4 lg:pl-0 pl-4 pr-4"
+                  src={Bball}
+                  width={400}
+                  height={300}
+                  alt="bball"
+                />
+              </a>
               <a
-                className="text-violet-800"
+                className="text-violet-800 lg:mb-0 mb-4 mt-4"
                 href="//yangba.net"
                 target="_blank"
                 rel="noopener noreferrer"

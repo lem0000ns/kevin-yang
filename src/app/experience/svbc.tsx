@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import SRA from "../resources/sra.png";
+import SVBC from "../resources/svbc.png";
 
 const svbc = () => {
   return (
@@ -23,8 +23,8 @@ const svbc = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  className="rounded-2xl pl-4 w-full"
-                  src={SRA}
+                  className="rounded-full ml-2 w-full lg:p-0 p-1 outline outline-violet-500"
+                  src={SVBC}
                   width={300}
                   height={300}
                   alt="bball"

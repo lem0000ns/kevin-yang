@@ -23,7 +23,7 @@ const sra = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  className="rounded-2xl pl-4 w-full"
+                  className="lg:rounded-2xl pl-4 w-full"
                   src={SRA}
                   width={300}
                   height={300}

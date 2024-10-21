@@ -48,13 +48,18 @@ const ivymax = () => {
               </CardFooter>
             </div>
             <div className="flex flex-col justify-center items-center mx-auto">
-              <Image
-                className="rounded-2xl pr-4 w-full"
-                src={APCS}
-                width={300}
-                height={300}
-                alt="apcs"
-              />
+              <div className="flex flex-col justify-center mx-auto">
+                <Image
+                  className="lg:rounded-2xl lg:pr-4 w-full"
+                  src={APCS}
+                  width={300}
+                  height={300}
+                  alt="apcs"
+                />
+                <p className="mx-auto" style={{ fontSize: "0.5rem" }}>
+                  https://www.create-learn.us/blog/ap-computer-science-a/
+                </p>
+              </div>
               <a
                 className="text-violet-800 mt-8"
                 href="https://drive.google.com/drive/folders/1uXuNXCNou2KLxJh_0lJVVIJVj3meUWY4?dmr=1&ec=wgc-drive-globalnav-goto"
