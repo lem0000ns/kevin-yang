@@ -1,4 +1,5 @@
 import React from "react";
+import TransitionLink from "./ui/TransitionLink";
 
 const aboutme = () => {
   return (
@@ -13,13 +14,12 @@ const aboutme = () => {
         and minor in Linguistics with an interest in full-stack development. I
         have{" "}
         <span>
-          <a
-            href="/experience"
-            rel="noopener noreferrer"
+          <TransitionLink
+            href="/projects"
             className="text-violet-500 hover:text-violet-400"
           >
             project experience
-          </a>
+          </TransitionLink>
         </span>{" "}
         with cloud services, database handling, and web development.
       </p>

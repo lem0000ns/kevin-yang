@@ -23,7 +23,7 @@ const sra = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  className="lg:rounded-2xl pl-4 w-full"
+                  className="lg:rounded-2xl lg:pl-4 w-full"
                   src={SRA}
                   width={300}
                   height={300}
@@ -31,7 +31,7 @@ const sra = () => {
                 />
               </a>
               <a
-                className="text-violet-800 mt-8"
+                className="text-violet-800 mt-8 hover:text-violet-400"
                 href="https://docs.google.com/document/d/1mrweA5_zpxQES2hrZPdwFmwzzBZb8jT5V36-PKk2SjQ/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"

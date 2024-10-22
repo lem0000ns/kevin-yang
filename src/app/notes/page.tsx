@@ -66,6 +66,7 @@ const Other = () => {
             a list of general philosophical/scientific concepts and notes on
             subjects that intrigued me
           </li>
+          <li>includes detailed summary of Harry Potter (read in Spanish)</li>
         </ul>
       </div>
     </div>

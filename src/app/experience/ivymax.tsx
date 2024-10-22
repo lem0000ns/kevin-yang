@@ -61,7 +61,7 @@ const ivymax = () => {
                 </p>
               </div>
               <a
-                className="text-violet-800 mt-8"
+                className="text-violet-800 mt-8 hover:text-violet-400"
                 href="https://drive.google.com/drive/folders/1uXuNXCNou2KLxJh_0lJVVIJVj3meUWY4?dmr=1&ec=wgc-drive-globalnav-goto"
                 target="_blank"
                 rel="noopener noreferrer"

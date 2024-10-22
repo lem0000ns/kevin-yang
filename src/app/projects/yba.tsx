@@ -28,9 +28,9 @@ const yba = () => {
                   href="https://github.com/lem0000ns/yba_frontend"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-violet-800"
+                  className="text-violet-800 hover:text-violet-400"
                 >
-                  <u>Frontend</u>
+                  <strong>Frontend</strong>
                 </a>
                 <CardDescription>
                   Implemented using React and Typescript. Features such as
@@ -42,9 +42,9 @@ const yba = () => {
                   href="https://github.com/lem0000ns/yba_backend"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-violet-800"
+                  className="text-violet-800 hover:text-violet-400"
                 >
-                  <u>Backend</u>
+                  <strong>Backend</strong>
                 </a>
                 <CardDescription>
                   Data was stored in AWS RDS, which was connected to a MySQL
@@ -74,7 +74,7 @@ const yba = () => {
                 />
               </a>
               <a
-                className="text-violet-800 lg:mb-0 mb-4 mt-4"
+                className="text-violet-800 lg:mb-0 mb-4 mt-4 hover:text-violet-400"
                 href="//yangba.net"
                 target="_blank"
                 rel="noopener noreferrer"
