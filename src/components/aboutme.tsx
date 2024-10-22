@@ -13,13 +13,8 @@ const aboutme = () => {
         I'm a 2nd-year undergraduate at UCSB with a major in Computer Science
         and minor in Linguistics with an interest in full-stack development. I
         have{" "}
-        <span>
-          <TransitionLink
-            href="/projects"
-            className="text-violet-500 hover:text-violet-400"
-          >
-            project experience
-          </TransitionLink>
+        <span className="text-violet-500 hover:text-violet-400">
+          <TransitionLink href="/projects">project experience</TransitionLink>
         </span>{" "}
         with cloud services, database handling, and web development.
       </p>
