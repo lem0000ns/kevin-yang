@@ -5,7 +5,7 @@ interface Props {
   details: string[];
 }
 
-const NoteDoc = ({ link, children, details }: Props) => {
+const NoteDoc = ({ link, details }: Props) => {
   return (
     <div className="space-y-2">
       <a
