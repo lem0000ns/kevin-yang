@@ -3,9 +3,10 @@ import React from "react";
 interface Props {
   link: string;
   details: string[];
+  children: React.ReactNode;
 }
 
-const NoteDoc = ({ link, details }: Props) => {
+const NoteDoc = ({ link, details, children }: Props) => {
   return (
     <div className="space-y-2">
       <a
