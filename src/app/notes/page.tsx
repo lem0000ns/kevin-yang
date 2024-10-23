@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/footer";
 import { Roboto_Mono } from "@next/font/google";
+import NoteDoc from "./NoteDoc";
+import { CalendarDays } from "lucide-react";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -12,76 +14,56 @@ const LanguageLearning = () => {
   return (
     <div className="text-left w-2/3 mx-auto space-y-8 flex flex-col">
       <strong className="text-2xl">Language-learning</strong>
-      <div className="space-y-2">
-        <a
-          href="https://docs.google.com/document/d/1DVD57DQbVW8Cy6f1DL6gpDd-3LSJGeCCkJNpBvPyOuY/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-indigo-500 text-purple-400"
-        >
-          Spanish "mi propio diccionario"
-        </a>
-        <ul className="list-disc ml-6">
-          <li>
-            a personal dictionary of Spanish grammar, vocabulary, slang that
-            were new or I found interesting
-          </li>
-        </ul>
-      </div>
-      <div className="space-y-2">
-        <a
-          href="https://docs.google.com/document/d/1viQcMZY7XQ-N5SSJoYg767FIvvtXo0FsN4FBgUxbhzU/edit?tab=t.0"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-indigo-500 text-purple-400"
-        >
-          Korean
-        </a>
-        <ul className="list-disc ml-6">
-          <li>
-            a personal dictionary of Korean grammar, vocabulary, slang that were
-            new or I found interesting
-          </li>
-        </ul>
-      </div>
+      <NoteDoc
+        link="https://drive.google.com/file/d/1MSDZRWxDf3TRAju1QRZITvd03PaBvRHn/view?usp=sharing"
+        details={[
+          "a personal dictionary of Spanish grammar, vocabulary, slang that were new or I found interesting",
+        ]}
+      >
+        Spanish "mi propio diccionario"
+      </NoteDoc>
+      <NoteDoc
+        link="https://drive.google.com/file/d/1Tfx0SK4zaxZOnneti5sfAY2d_hyM9bp5/view?usp=sharing"
+        details={[
+          "a personal dictionary of Korean grammar, vocabulary, slang that were new or I found interesting",
+        ]}
+      >
+        Korean
+      </NoteDoc>
     </div>
   );
 };
 
 const Other = () => {
   return (
-    <div className="text-left w-2/3 mx-auto space-y-8 flex flex-col">
+    <div className="text-left w-2/3 mx-auto space-y-4 flex flex-col">
       <strong className="text-2xl">Other</strong>
-      <div className="space-y-2">
-        <a
-          href="https://docs.google.com/document/d/1bXoE3X6UWoyZPk2DOIPhGu9NesajMqb1lsDx_HCJ_5M/edit?tab=t.0"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-indigo-500 text-purple-400"
-        >
-          cosas interesantes (en. "interesting things")
-        </a>
-        <ul className="list-disc ml-6">
-          <li>
-            a list of general philosophical/scientific concepts and notes on
-            subjects that intrigued me
-          </li>
-          <li>includes detailed summary of Harry Potter (read in Spanish)</li>
-        </ul>
-      </div>
+      <NoteDoc
+        link="https://drive.google.com/file/d/1LX6oGsytumKhr5wkXu1d8ue3oA6CR5Dq/view?usp=sharing"
+        details={[
+          "a list of general philosophical/scientific concepts and notes on subjects that intrigued me",
+          "includes detailed summary of Harry Potter (read in Spanish)",
+        ]}
+      >
+        cosas interesantes (en. "interesting things")
+      </NoteDoc>
     </div>
   );
 };
 
 const page = () => {
   return (
-    <div
-      className={`${robotoMono.className} homepage flex flex-col space-y-10`}
-    >
-      <Navbar />
-      <div className="flex flex-col space-y-16">
-        <LanguageLearning />
-        <Other />
+    <div className={`${robotoMono.className}`}>
+      <div className={"homepage flex flex-col space-y-8"}>
+        <Navbar />
+        <div className="flex flex-col space-y-12">
+          <LanguageLearning />
+          <Other />
+        </div>
+      </div>
+      <div className="text-left w-2/3 mx-auto flex flex-row space-x-2 mt-10">
+        <CalendarDays />
+        <p>Last updated 10/23/2024</p>
       </div>
       <Footer />
     </div>

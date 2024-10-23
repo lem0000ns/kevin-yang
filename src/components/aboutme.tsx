@@ -26,7 +26,7 @@ const aboutme = () => {
       <p className="text-lg">
         Open my resume{" "}
         <a
-          href="https://docs.google.com/document/d/16l3Z2ABT-0xikEwE-Ee_g07kd7EFKWBM/edit?usp=drive_link&ouid=108463634580760321563&rtpof=true&sd=true"
+          href="https://drive.google.com/file/d/19dEjWUrw2rvXL8TRM1VaczoEgQUXauEe/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="text-violet-500 hover:text-violet-400"
