@@ -75,7 +75,7 @@ const yba = () => {
               </a>
               <a
                 className="text-violet-800 lg:mb-0 mb-4 mt-4 hover:text-violet-400"
-                href="//yangba.net"
+                href="http://yangba.net/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
