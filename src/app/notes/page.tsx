@@ -39,7 +39,7 @@ const Other = () => {
     <div className="text-left w-2/3 mx-auto space-y-4 flex flex-col">
       <strong className="text-2xl">Other</strong>
       <NoteDoc
-        link="https://drive.google.com/file/d/1LX6oGsytumKhr5wkXu1d8ue3oA6CR5Dq/view?usp=sharing"
+        link="https://drive.google.com/file/d/1NdnftZlOAtZdSGWokW8-Mo3gGkXA8FyM/view?usp=sharing"
         details={[
           "a list of general philosophical/scientific concepts and notes on subjects that intrigued me",
           "includes detailed summary of Harry Potter (read in Spanish)",
@@ -63,7 +63,7 @@ const page = () => {
       </div>
       <div className="text-left w-2/3 mx-auto flex flex-row space-x-2 mt-10">
         <CalendarDays />
-        <p>Last updated 10/23/2024</p>
+        <p>Last updated 01/07/2025</p>
       </div>
       <Footer />
     </div>

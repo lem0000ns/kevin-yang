@@ -9,25 +9,21 @@ const skills = () => {
       <p className="text-center lg:w-2/3 w-4/5 mx-auto">
         <strong className="text-violet-400">Relevant courses:</strong> Discrete
         Mathematics, Object-Oriented Programming, Assembly, Data Structures and
-        Algorithms, Intro to Computational Science
+        Algorithms, Intro to Cryptography, Computer Architecture
       </p>
       <ul className="text-center lg:w-2/3 w-5/6 space-y-3 mx-auto">
         <li className="mt-8">
           <strong className="text-violet-400">Programming Languages: </strong>
-          Python, Java, HTML/CSS, C++, Typescript, Tailwind
-        </li>
-        <li>
-          <strong className="text-violet-400">Cloud Technologies: </strong>
-          Amazon Web Services (Lambda, VPC, S3, API Gateway, IAM), API
-          Development
+          Python, Java, HTML/CSS, C++, Javascript
         </li>
         <li>
           <strong className="text-violet-400">Data & Version Control: </strong>
-          JSON, MySQL, PostgreSQL, Git, Shell-Scripting, Web-Scraping
+          JSON, SQL, Git, Shell-Scripting, Web-Scraping
         </li>
         <li>
           <strong className="text-violet-400">Full-Stack Tools: </strong>
-          Backend, Frontend, React.js, Next.js
+          Tailwind, Bootstrap, Passport.js, AWS, React.js, Next.js, Node +
+          Express
         </li>
       </ul>
     </div>

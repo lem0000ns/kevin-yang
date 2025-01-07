@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Linkedin, Github } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 
 const footer = () => {
   return (
@@ -10,13 +10,6 @@ const footer = () => {
           Designed by <strong>Kevin Yang</strong>
         </div>
         <div className="flex space-x-4 lg:mx-0 mx-auto">
-          <a
-            href="https://www.instagram.com/kevonsheep/"
-            target="_blank"
-            rel="nooopener noreferrer"
-          >
-            <Instagram />
-          </a>
           <a
             href="https://www.linkedin.com/in/kevin-yang-7b5151186/"
             target="_blank"

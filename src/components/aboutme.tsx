@@ -19,9 +19,9 @@ const aboutme = () => {
         with cloud services, database handling, and web development.
       </p>
       <p className="text-lg">
-        Outside of programming, I enjoy playing basketball, running, learning
-        new languages, and reading horror stories. I've been on-and-off
-        self-studying Korean for 2 years and Spanish since high school.
+        Outside of programming, I enjoy playing basketball, running, and
+        learning languages. I've been on-and-off self-studying Korean for 2
+        years and Spanish since high school.
       </p>
       <p className="text-lg">
         Open my resume{" "}
