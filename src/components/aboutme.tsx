@@ -10,9 +10,9 @@ const aboutme = () => {
         </strong>
       </p>
       <p className="text-lg">
-        I'm a junior at UCSB with a major in Computer Science and minor in
-        Linguistics with an interest in full-stack development and computational
-        linguistics. I have{" "}
+        I'm a 2nd year Computer Science major + Linguistics minor at UCSB with
+        an interest in full-stack development and natural language processing. I
+        have{" "}
         <span className="text-violet-500 hover:text-violet-400">
           <TransitionLink href="/projects">project experience</TransitionLink>
         </span>{" "}
@@ -20,15 +20,15 @@ const aboutme = () => {
       </p>
       <p className="text-lg">
         Outside of programming, I enjoy playing basketball, running, and
-        learning languages—specifically Korean and Spanish. This is mainly done
-        through listening to native content, such as podcasts or movies, or
-        reading books. I've read the "Harry Potter" series three times, once
-        completely in Spanish!
+        learning languages (currently Korean and Spanish). I enjoy listening to
+        native content, such as podcasts or movies, or reading books. I've read
+        the "Harry Potter" series three times, once completely in Spanish.
+        Thanks for visiting my website!
       </p>
       <p className="text-lg">
         Open my resume{" "}
         <a
-          href="https://drive.google.com/file/d/1KFnirNTw9NZ0Efx999PF8bUAjvuH4W50/view?usp=sharing"
+          href="https://drive.google.com/file/d/14XIsEHO1o9e5L235texsP75Vw_zPEQF-/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="text-violet-500 hover:text-violet-400"

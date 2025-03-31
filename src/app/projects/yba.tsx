@@ -32,7 +32,7 @@ const yba = () => {
                 >
                   <strong>Frontend</strong>
                 </a>
-                <CardDescription>
+                <CardDescription className="text-black">
                   Implemented using React and Typescript. Features such as
                   tooltips, autocomplete, and unique player profiles are
                   included.
@@ -46,7 +46,7 @@ const yba = () => {
                 >
                   <strong>Backend</strong>
                 </a>
-                <CardDescription>
+                <CardDescription className="text-black">
                   Data was stored in AWS RDS, which was connected to a MySQL
                   instance. Images were retrieved from online{" "}
                   <span className="text-violet-800">

@@ -1,5 +1,6 @@
 import React from "react";
 import Yba from "./yba";
+import Yanguages from "./yanguages";
 import Navbar from "@/components/ui/Navbar";
 import { Roboto_Mono } from "next/font/google";
 import Footer from "@/components/footer";
@@ -19,6 +20,7 @@ const page = () => {
         <strong>Projects</strong>
       </div>
       <Yba />
+      <Yanguages />
       <Footer></Footer>
     </div>
   );
