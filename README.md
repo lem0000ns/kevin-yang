@@ -12,4 +12,4 @@ Next.js, React, HTML/Tailwind CSS, Typescript, Javascript, Vercel, shadcn/ui, Lu
 
 ## Contact
 
-Feel free to contact me at kevin_yang@ucsb.edu or through my social media profiles. Feedback is always appreciated.
+Feel free to contact me at kevin_yang@ucsb.edu or through my social media profiles listed on the website footer. Friend me on Duolingo too.
