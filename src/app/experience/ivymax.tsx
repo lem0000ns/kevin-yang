@@ -12,13 +12,13 @@ import APCS from "../resources/apcs.png";
 
 const ivymax = () => {
   return (
-    <div className="experience-section flex flex-col items-center justify-center space-y-16">
+    <div className="experience-section flex flex-col items-center justify-center space-y-16 w-4/5 mx-auto">
       <div className="experience-specific">
-        <Card className="lg:w-3/5 w-4/5 mx-auto bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
+        <Card className="lg:w-3/5 w-4/5 bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
           <div className="flex lg:flex-row flex-col justify-between items-center">
             <div className="flex-1 mr-4">
               <CardHeader>
-                <CardTitle>AP Computer Science Instructor</CardTitle>
+                <CardTitle>APCS A Instructor</CardTitle>
                 <CardDescription>
                   Taught weekly sessions on core APCS concepts to high school
                   students.
@@ -44,10 +44,10 @@ const ivymax = () => {
                 </CardDescription>
               </CardContent>
               <CardFooter>
-                <p className="text-right">March 2024 - Present</p>
+                <p className="text-right">March 2024 - May 2024</p>
               </CardFooter>
             </div>
-            <div className="flex flex-col justify-center items-center mx-auto">
+            <div className="flex flex-col justify-center items-center mx-auto pt-2 pb-2">
               <div className="flex flex-col justify-center mx-auto">
                 <Image
                   className="lg:rounded-2xl lg:pr-4 w-full"

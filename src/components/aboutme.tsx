@@ -10,25 +10,28 @@ const aboutme = () => {
         </strong>
       </p>
       <p className="text-lg">
-        I'm a 2nd year Computer Science major + Linguistics minor at UCSB with
+        I'm a 3rd year Computer Science major + Linguistics minor at UCSB with
         an interest in full-stack development and natural language processing. I
         have{" "}
         <span className="text-violet-500 hover:text-violet-400">
-          <TransitionLink href="/projects">project experience</TransitionLink>
+          <TransitionLink href="/projects">
+            internship and project experience
+          </TransitionLink>
         </span>{" "}
-        with cloud services, database handling, and web development.
+        with cloud-deployed applications, database management, and AI/NLP
+        systems.
       </p>
       <p className="text-lg">
-        Outside of programming, I enjoy playing basketball, running, and
-        learning languages (currently Korean and Spanish). I enjoy listening to
-        native content, such as podcasts or movies, or reading books. I've read
-        the "Harry Potter" series three times, once completely in Spanish.
-        Thanks for visiting my website!
+        Outside of programming, I enjoy playing basketball, running, learning
+        languages (currently Korean and Spanish), and reading. <b>Fun fact:</b>{" "}
+        I've read the "Harry Potter" series three times, once completely in
+        Spanish. I'm currently reading "Game of Thrones" and rereading the
+        "Diary of a Wimpy Kid" series.
       </p>
       <p className="text-lg">
         Open my resume{" "}
         <a
-          href="https://drive.google.com/file/d/14XIsEHO1o9e5L235texsP75Vw_zPEQF-/view?usp=sharing"
+          href="https://docs.google.com/document/d/e/2PACX-1vTp45OSaCNoJ4sKb0va6VL_PzHLoKRiUrIKSgop3F5FxrgSY8GRjaiQeqrXslHHKA/pub"
           target="_blank"
           rel="noopener noreferrer"
           className="text-violet-500 hover:text-violet-400"

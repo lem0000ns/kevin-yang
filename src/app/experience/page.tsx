@@ -3,8 +3,9 @@ import Navbar from "@/components/ui/Navbar";
 import { Roboto_Mono } from "next/font/google";
 import Sra from "./sra";
 import IvyMax from "./ivymax";
-import SVBC from "./svbc";
 import Footer from "@/components/footer";
+import Razemath from "./razemath";
+import Research from "./research";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -20,9 +21,10 @@ const page = () => {
       <div className="text-center text-4xl">
         <strong>Experience</strong>
       </div>
-      <Sra />
+      <Research />
+      <Razemath />
       <IvyMax />
-      <SVBC />
+      <Sra />
       <Footer />
     </div>
   );

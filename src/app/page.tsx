@@ -2,7 +2,7 @@
 import { Roboto_Mono } from "next/font/google";
 import React from "react";
 import Image from "next/image";
-import profilePic from "./resources/pfp.png";
+import profilePic from "./resources/pfp.jpeg";
 import Navbar from "@/components/ui/Navbar";
 import AboutMe from "@/components/aboutme";
 import Skills from "@/components/skills";
