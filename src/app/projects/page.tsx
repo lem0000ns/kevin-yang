@@ -13,7 +13,7 @@ const robotoMono = Roboto_Mono({
 const page = () => {
   return (
     <div
-      className={`${robotoMono.className} experience flex flex-col space-y-10 mb-16`}
+      className={`${robotoMono.className} experience flex flex-col space-y-10 mb-1 w-full mx-auto`}
     >
       <Navbar />
       <div className="text-center text-4xl">

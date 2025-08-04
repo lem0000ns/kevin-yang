@@ -12,11 +12,11 @@ import SRA from "../resources/sra.png";
 
 const sra = () => {
   return (
-    <div className="experience-section flex flex-col items-center justify-center space-y-16 w-4/5 mx-auto">
+    <div className="experience-section flex flex-col items-center justify-center space-y-16">
       <div className="experience-specific">
-        <Card className="lg:w-3/5 w-4/5 ml-auto bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
+        <Card className="w-3/5 mx-auto bg-violet-100 hover:scale-105 transition-all duration-300 ease-in-out outline outline-violet-300 outline-offset-4">
           <div className="flex lg:flex-row lg:mt-0 mt-4 flex-col justify-between items-center">
-            <div className="flex flex-col justify-center items-center mx-auto">
+            <div className="flex flex-col justify-center items-center mx-auto pt-2 pb-2">
               <a
                 href="https://docs.google.com/presentation/d/16qhS_-NwkbVXvhDXhm5P0EsL2hvy9oF06Q6HCLw3N4Q/edit#slide=id.g13c39e20619_0_1"
                 target="_blank"
@@ -52,10 +52,7 @@ const sra = () => {
               <CardContent className="hidden lg:block">
                 <CardDescription>
                   A Python script was used to web-scrape more than 17,700
-                  products. Characteristics such as product color vibrancy,
-                  bio-friendliness, and transparent packaging were documented
-                  and used to perform data visualizations and processing. More
-                  can be read about{" "}
+                  products. More can be read about{" "}
                   <span className="text-violet-800">
                     <a
                       href="https://docs.google.com/document/d/1mrweA5_zpxQES2hrZPdwFmwzzBZb8jT5V36-PKk2SjQ/edit?usp=sharing"
