@@ -25,8 +25,7 @@ const aboutme = () => {
         Outside of programming, I enjoy playing basketball, running, learning
         languages (currently Korean and Spanish), and reading. <b>Fun fact:</b>{" "}
         I've read the "Harry Potter" series three times, once completely in
-        Spanish. I'm currently reading "Game of Thrones" and rereading the
-        "Diary of a Wimpy Kid" series.
+        Spanish. I'm currently reading "Game of Thrones."
       </p>
       <p className="text-lg">
         Open my resume{" "}

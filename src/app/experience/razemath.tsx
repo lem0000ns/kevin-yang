@@ -41,7 +41,7 @@ const razemath = () => {
             </div>
             <div className="flex-1 mr-4">
               <CardHeader>
-                <CardTitle>Backend Systems Engineer Intern</CardTitle>
+                <CardTitle>Software Engineer Intern</CardTitle>
                 <CardDescription>
                   Led backend development of a Python-based AI math tutoring
                   platform with concept mastery heatmaps and tailored problem
@@ -56,7 +56,7 @@ const razemath = () => {
                 </CardDescription>
               </CardContent>
               <CardFooter>
-                <p className="text-right">February 2025 - Present</p>
+                <p className="text-right">March 2025 - Present</p>
               </CardFooter>
             </div>
           </div>
