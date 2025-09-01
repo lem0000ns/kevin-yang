@@ -34,7 +34,7 @@ const research = () => {
                 </CardDescription>
               </CardContent>
               <CardFooter>
-                <p className="text-right">February 2025 - Present</p>
+                <p className="text-right">March 2025 - Present</p>
               </CardFooter>
             </div>
             <div className="flex flex-col justify-center items-center space-y-2 mx-auto pt-2 pb-2">

@@ -56,7 +56,7 @@ const razemath = () => {
                 </CardDescription>
               </CardContent>
               <CardFooter>
-                <p className="text-right">March 2025 - Present</p>
+                <p className="text-right">February 2025 - Present</p>
               </CardFooter>
             </div>
           </div>
