@@ -9,7 +9,7 @@ const skills = () => {
       <p className="text-center lg:w-2/3 w-4/5 mx-auto">
         <strong className="text-violet-400">Relevant courses:</strong> Data
         Structures and Algorithms, Artificial Intelligence, Machine Learning,
-        Computer Architecture, Object-Oriented Programming
+        Computer Architecture, Object-Oriented Programming, Computer Networking
       </p>
       <ul className="text-center lg:w-2/3 w-5/6 space-y-3 mx-auto">
         <li className="mt-8">
@@ -19,7 +19,7 @@ const skills = () => {
         <li>
           <strong className="text-violet-400">Frameworks / DevOps: </strong>
           AWS, Docker, React, Next.js, Express.js, Django, Flask, MySQL,
-          Firebase, Git
+          Firebase, Git, FastAPI
         </li>
         <li>
           <strong className="text-violet-400">Favorite Animals: </strong>

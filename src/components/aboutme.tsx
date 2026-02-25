@@ -11,8 +11,7 @@ const aboutme = () => {
       </p>
       <p className="text-lg">
         I'm a 3rd year Computer Science major + Linguistics minor at UCSB with
-        an interest in full-stack development and natural language processing. I
-        have{" "}
+        an interest in NLP and anything to do with LLMs. I have{" "}
         <span className="text-violet-500 hover:text-violet-400">
           <TransitionLink href="/projects">
             internship and project experience
@@ -22,10 +21,10 @@ const aboutme = () => {
         systems.
       </p>
       <p className="text-lg">
-        Outside of programming, I enjoy playing basketball, running, learning
-        languages (currently Korean and Spanish), and reading. <b>Fun fact:</b>{" "}
-        I've read the "Harry Potter" series three times, once completely in
-        Spanish. I'm currently reading "Game of Thrones."
+        Outside of programming, I enjoy playing basketball, learning languages
+        (currently Korean and Spanish), and reading. <b>Fun fact:</b> I've read
+        the "Harry Potter" series three times, once completely in Spanish. I
+        also want to have a pet turtle sometime after graduating.
       </p>
       <p className="text-lg">
         Open my resume{" "}

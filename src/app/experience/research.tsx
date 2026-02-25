@@ -28,9 +28,9 @@ const research = () => {
               </CardHeader>
               <CardContent className="hidden lg:block">
                 <CardDescription>
-                  Currently investigating impact of applying an agentic
-                  framework into a multilingual persona-prompting pipeline on
-                  long-form multi-cultural QA pairs.
+                  Currently investigating impact of applying iterative
+                  self-refinement persona-prompting on culturally-challenging QA
+                  pairs and SAQ datasets.
                 </CardDescription>
               </CardContent>
               <CardFooter>
