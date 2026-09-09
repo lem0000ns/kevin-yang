@@ -1,28 +1,30 @@
 "use client";
-import Link, { LinkProps } from "next/link";
-import React, { ReactNode } from "react";
+import Link from "next/link";
+import React, { ComponentPropsWithoutRef } from "react";
 import { useRouter } from "next/navigation";
 
-interface TransitionLinkProps extends LinkProps {
-  children: ReactNode;
-  href: string;
-}
+type TransitionLinkProps = ComponentPropsWithoutRef<typeof Link>;
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const TransitionLink = ({ children, href, ...props }: TransitionLinkProps) => {
+const TransitionLink = ({ children, href, onClick, ...props }: TransitionLinkProps) => {
   const router = useRouter();
 
   const handleTransition = async (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
+    onClick?.(e);
+    if (e.defaultPrevented) return;
+
     e.preventDefault();
     const body = document.querySelector("body");
     body?.classList.add("page-transition");
     await sleep(200);
-    router.push(href);
+    const destination =
+      typeof href === "string" ? href : href.pathname ?? "/";
+    router.push(destination);
     await sleep(200);
     body?.classList.remove("page-transition");
   };
