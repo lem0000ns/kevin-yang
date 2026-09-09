@@ -1,8 +1,5 @@
 import type { NoteEntry } from "./notes";
-import {
-  timelineContainerClassName,
-  timelineDotClassName,
-} from "@/components/timeline/constants";
+import { timelineDotClassName } from "@/components/timeline/constants";
 
 type NoteItemProps = {
   entry: NoteEntry;
