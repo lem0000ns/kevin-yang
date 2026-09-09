@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "@/components/ui/Navbar";
-import { Roboto_Mono } from "next/font/google";
-import Sra from "./sra";
-import IvyMax from "./ivymax";
 import Footer from "@/components/footer";
-import Razemath from "./razemath";
-import Research from "./research";
+import AccordionList from "@/components/accordion/AccordionList";
+import { Roboto_Mono } from "next/font/google";
+import { experiences } from "./experiences";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -18,13 +16,11 @@ const page = () => {
       className={`${robotoMono.className} experience flex flex-col space-y-10 mb-16 w-full mx-auto`}
     >
       <Navbar />
-      <div className="text-center text-4xl">
-        <strong>Experience</strong>
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">Experience</h1>
+        <p className="mt-2 text-sm text-violet-300/60">roles & internships</p>
       </div>
-      <Research />
-      <Razemath />
-      <IvyMax />
-      <Sra />
+      <AccordionList entries={experiences} />
       <Footer />
     </div>
   );

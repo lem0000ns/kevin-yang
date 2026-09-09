@@ -1,12 +1,10 @@
 "use client";
 import { Roboto_Mono } from "next/font/google";
 import React from "react";
-import Image from "next/image";
-import profilePic from "./resources/pfp.jpeg";
 import Navbar from "@/components/ui/Navbar";
 import AboutMe from "@/components/aboutme";
-import Skills from "@/components/skills";
 import Footer from "@/components/footer";
+import RotatingTitle from "@/components/RotatingTitle";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -16,18 +14,16 @@ const robotoMono = Roboto_Mono({
 export default function Home() {
   return (
     <div
-      className={`${robotoMono.className} homepage flex flex-col space-y-10 mb-16`}
+      className={`${robotoMono.className} homepage flex flex-col space-y-10 mb-16 w-full mx-auto`}
     >
       <Navbar />
-      <div className="flex lg:flex-row flex-col items-center lg:w-3/4 lg:mx-auto mx-0 w-full">
-        <AboutMe></AboutMe>
-        <Image
-          className="rounded-full object-cover lg:w-1/3 w-2/3 lg:p-4 p-1 mx-auto lg:mt-0 mt-8 outline outline-indigo-300 lg:ml-8"
-          src={profilePic}
-          alt="Yours truly"
-        />
+      <div className="text-center">
+        <RotatingTitle />
+        <p className="mt-2 text-sm text-violet-300/60">
+          computer science @ ucsb
+        </p>
       </div>
-      <Skills />
+      <AboutMe />
       <Footer />
     </div>
   );

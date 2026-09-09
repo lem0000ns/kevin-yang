@@ -1,9 +1,9 @@
 import React from "react";
-import Yba from "./yba";
-import Yanguages from "./yanguages";
 import Navbar from "@/components/ui/Navbar";
-import { Roboto_Mono } from "next/font/google";
 import Footer from "@/components/footer";
+import AccordionList from "@/components/accordion/AccordionList";
+import { Roboto_Mono } from "next/font/google";
+import { projects } from "./projects";
 
 const robotoMono = Roboto_Mono({
   weight: ["400", "700"],
@@ -13,15 +13,15 @@ const robotoMono = Roboto_Mono({
 const page = () => {
   return (
     <div
-      className={`${robotoMono.className} experience flex flex-col space-y-10 mb-1 w-full mx-auto`}
+      className={`${robotoMono.className} experience flex flex-col space-y-10 mb-16 w-full mx-auto`}
     >
       <Navbar />
-      <div className="text-center text-4xl">
-        <strong>Projects</strong>
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">Projects</h1>
+        <p className="mt-2 text-sm text-violet-300/60">things I've built</p>
       </div>
-      <Yba />
-      <Yanguages />
-      <Footer></Footer>
+      <AccordionList entries={projects} />
+      <Footer />
     </div>
   );
 };
