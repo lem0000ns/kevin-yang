@@ -2,6 +2,24 @@ import type { AccordionEntry } from "@/components/accordion/types";
 
 export const projects: AccordionEntry[] = [
   {
+    id: "hangugnese",
+    title: "Hangugnese",
+    subtitle: "English to Blend of Korean, Hanja, Loanword",
+    summary:
+      "Translates English to Korean and marks where each word comes from, lighting up Sino-Korean words and Western loanwords.",
+    bullets: [
+      "Sino-Korean words glow yellow and show simplified hanja with pinyin. Loanwords glow red and show a Spanish rendering of the borrowed word",
+      "After Google Translate returns Korean, a hanja dictionary is checked first. Anything it misses goes to a logistic regression model that decides whether the word is a Western loanword",
+      "Particles are stripped before lookup, so the highlight sits on the stem and the particle stays plain text beside it",
+    ],
+    links: [
+      {
+        label: "Live",
+        href: "https://hangugnese.vercel.app/",
+      },
+    ],
+  },
+  {
     id: "nba-analytics",
     title: "Predictive NBA Analytics Platform",
     subtitle: "Machine Learning Engineer",
