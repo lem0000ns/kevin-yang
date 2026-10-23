@@ -1,29 +1,5 @@
-import React from "react";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/footer";
-import AccordionList from "@/components/accordion/AccordionList";
-import { Roboto_Mono } from "next/font/google";
-import { experiences } from "./experiences";
+import HashRedirect from "@/components/HashRedirect";
 
-const robotoMono = Roboto_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-});
-
-const page = () => {
-  return (
-    <div
-      className={`${robotoMono.className} experience flex flex-col space-y-10 mb-16 w-full mx-auto`}
-    >
-      <Navbar />
-      <div className="text-center">
-        <h1 className="text-4xl font-bold">Experience</h1>
-        <p className="mt-2 text-sm text-violet-300/60">roles & internships</p>
-      </div>
-      <AccordionList entries={experiences} />
-      <Footer />
-    </div>
-  );
-};
-
-export default page;
+export default function Page() {
+  return <HashRedirect hash="#experience" />;
+}

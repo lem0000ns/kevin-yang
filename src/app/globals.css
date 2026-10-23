@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto Mono', sans-serif;
-  color:rgb(214, 200, 255);
-  background-color: rgb(2, 0, 3) !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: #f6f3ec;
+  background-color: #09090b !important;
   transition-property: opacity, background, transform, filter;
   transition-timing-function: ease-in-out;
   transition-duration: 500ms;
@@ -106,12 +106,24 @@ body {
 }
 
 html {
-  overflow: hidden;
   height: 100%;
 }
 
 body {
-  overflow: auto;
   height: 100%;
-  background-color: rgb(243, 239, 255)
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background-color: #09090b;
+}
+
+.panel-scroll {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  .panel-scroll {
+    scroll-behavior: auto;
+  }
 }

@@ -1,66 +1,65 @@
 import React from "react";
 import Image from "next/image";
-import TransitionLink from "./ui/TransitionLink";
-import profilePic from "@/app/resources/pfp.jpeg";
+import profilePic from "@/app/resources/pfp.png";
+import { SectionLink } from "@/components/PanelHash";
+import RotatingTitle from "@/components/RotatingTitle";
+
+const toc = [
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
+  { href: "#notes", label: "Notes" },
+];
 
 const AboutMe = () => {
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 md:px-8">
-      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
-        <div className="shrink-0">
-          <Image
-            className="h-44 w-44 rounded-full border-2 border-violet-500/30 object-cover shadow-[0_0_24px_rgba(139,92,246,0.12)] md:h-52 md:w-52"
-            src={profilePic}
-            alt="Kevin Yang"
-            priority
-          />
-        </div>
-
-        <div className="w-full space-y-4">
-          <div className="rounded-lg border border-violet-500/20 bg-violet-950/10 p-6 md:p-8">
-            <p className="text-sm leading-relaxed text-violet-200/70 md:text-base">
-              I&apos;m a 4th year Computer Science major + Linguistics minor at
-              UCSB with an interest in NLP, specifically model interpretability
-              and reasoning. I have{" "}
-              <TransitionLink
-                href="/experience"
-                className="text-violet-400 underline-offset-2 transition-colors hover:text-violet-300 hover:underline"
-              >
-                internship and project experience
-              </TransitionLink>{" "}
-              with cloud-deployed applications, LLM-powered automation
-              pipelines, and data engineering.
-            </p>
-          </div>
-
-          <div className="rounded-lg border border-violet-500/20 bg-violet-950/10 p-6 md:p-8">
-            <p className="text-sm leading-relaxed text-violet-200/70 md:text-base">
-              Outside of programming, I enjoy playing basketball and learning
-              languages (currently Korean and Spanish).{" "}
-              <span className="text-violet-100">Fun fact:</span> I&apos;ve read
-              the Harry Potter series three times, once completely in Spanish,
-              though my current knowledge of the Harry Potter universe is a
-              little rusty. One day, I&apos;d also like to try aquascaping.
-            </p>
-          </div>
-
-          <div className="rounded-lg border border-violet-500/20 bg-violet-950/10 px-6 py-4 md:px-8">
-            <p className="text-sm text-violet-200/70 md:text-base">
-              Open my resume{" "}
-              <a
-                href="https://docs.google.com/document/d/e/2PACX-1vTp45OSaCNoJ4sKb0va6VL_PzHLoKRiUrIKSgop3F5FxrgSY8GRjaiQeqrXslHHKA/pub"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-violet-400 underline-offset-2 transition-colors hover:text-violet-300 hover:underline"
-              >
-                here
-              </a>
-              .
-            </p>
-          </div>
-        </div>
+    <header className="relative mx-auto flex w-full max-w-md flex-col items-center text-center">
+      <div className="relative">
+        <div
+          aria-hidden
+          className="absolute -inset-10 rounded-full bg-[#d6c6ff]/10 blur-3xl"
+        />
+        <Image
+          className="relative h-32 w-32 rounded-2xl object-cover ring-1 ring-white/15 sm:h-36 sm:w-36"
+          src={profilePic}
+          alt="Kevin Yang"
+          priority
+          sizes="144px"
+        />
       </div>
-    </div>
+
+      <p className="mt-6 text-[11px] uppercase tracking-[0.24em] text-[#c4b5fd]">
+        Computer science @ UCSB
+      </p>
+      <h1 className="mt-3 text-4xl font-semibold tracking-tight text-[#f6f3ec] sm:text-5xl">
+        Kevin Yang
+      </h1>
+      <div className="mt-2 w-full">
+        <RotatingTitle />
+      </div>
+
+      <nav
+        aria-label="On this page"
+        className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2"
+      >
+        {toc.map((item, index) => (
+          <SectionLink
+            key={item.href}
+            href={item.href}
+            className="text-sm text-[#d4cfc6] transition-colors hover:text-[#f6f3ec]"
+          >
+            <span className="mr-2 text-xs text-[#c4b5fd]">0{index + 1}</span>
+            {item.label}
+          </SectionLink>
+        ))}
+      </nav>
+
+      <div className="mt-8 space-y-4 text-sm leading-relaxed text-[#d4cfc6]">
+        <p>
+          4th year Computer Science major + Linguistics minor at UCSB with an
+          interest in NLP, specifically model interpretability and reasoning.
+        </p>
+      </div>
+    </header>
   );
 };
 

@@ -7,8 +7,9 @@ const Duolingo = () => {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="50"
-      height="50"
+      width="24"
+      height="24"
+      className="h-6 w-6"
       viewBox="0 0 48 48"
     >
       <path
@@ -50,37 +51,47 @@ const Duolingo = () => {
 
 const footer = () => {
   return (
-    <div>
-      <hr className="border-t border-purple my-8 w-2/3 mx-auto" />
-      <div className="flex lg:w-1/2 w-3/4 justify-between items-center mx-auto">
-        <div className="lg:block hidden">
-          Designed by <strong>Kevin Yang</strong>
+    <footer className="mt-8">
+      <div className="flex w-full flex-col gap-8 px-5 py-12 sm:px-8 md:flex-row md:items-end md:justify-between lg:px-10">
+        <div>
+          <p className="text-xl font-semibold tracking-tight text-[#f7f4ff]">
+            Kevin Yang
+          </p>
+          <p className="mt-2 font-[family-name:var(--font-label)] text-sm text-[#9c978e]">
+            Last updated October 22, 2026
+          </p>
         </div>
-        <div className="flex items-center space-x-4 lg:mx-0 mx-auto">
+        <div className="flex items-center gap-5 text-[#d4cfc6]">
           <a
             href="https://www.linkedin.com/in/kevin-yang-7b5151186/"
             target="_blank"
-            rel="nooopener noreferrer"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="transition-colors hover:text-[#f6f3ec]"
           >
-            <Linkedin />
+            <Linkedin className="h-5 w-5" />
           </a>
           <a
             href="https://www.github.com/lem0000ns"
             target="_blank"
-            rel="nooopener noreferrer"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="transition-colors hover:text-[#f6f3ec]"
           >
-            <Github />
+            <Github className="h-5 w-5" />
           </a>
           <a
             href="https://www.duolingo.com/profile/al_pastor"
             target="_blank"
-            rel="nooopener noreferrer"
+            rel="noopener noreferrer"
+            aria-label="Duolingo"
+            className="opacity-90 transition-opacity hover:opacity-100"
           >
             <Duolingo />
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
